@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="puppet" type="puppet_node" name="puppet_node" output="screen">
+        <remap from="/joint_command" to="/robot/limb/left/joint_command" />
+        <param name="mode" value="vel"/>
+    </node>
+</launch>
